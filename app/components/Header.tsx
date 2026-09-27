@@ -25,7 +25,7 @@ function Header() {
         return (
           <Link
             key={index}
-            className={`${isActive ? "bg-[var(--primary-color)]/20 text-[var(--primary-color)]" : ""} px-4 py-2 rounded-full`}
+            className={`${isActive ? "bg-primary/20 text-primary" : ""} px-4 py-2 rounded-full`}
             href={link.href}
           >
             {link.name}
@@ -40,7 +40,7 @@ function Header() {
       {userLinks.map((link, index) => (
         <Link key={index} href={link.href}>
           {link.name}
-          <span className="bg-[var(--primary-color)] text-black font-bold rounded-full leading-6 text-center w-6 inline-block h-6 ml-1">
+          <span className="bg-primary text-black font-bold rounded-full leading-6 text-center w-6 inline-block h-6 ml-1">
             0
           </span>
         </Link>
